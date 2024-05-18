@@ -17,7 +17,13 @@ app.get('/Produtos', (req, res, next) => {
   next()
 })
 
+console.log('Testando o lsp no helix')
 
+const minhaVar = {}
+minhaVar.nome = 'Variável1'
+minhaVar.tamanho = 12
+
+console.log(minhaVar)
 
 app.get('/Produtos', (req, res, next) => {
   res.send(bd.getAllProdutos())
